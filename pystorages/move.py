@@ -6,7 +6,7 @@ Move a file in the safest way possible::
 """
 
 import os
-from .base import locks
+from . import locks
 
 try:
     from shutil import copystat

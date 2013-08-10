@@ -5,7 +5,7 @@ Requires Pillow (or PIL), as you might imagine.
 """
 import zlib
 
-from django.core.files import File
+from pystorages.base import File
 
 
 class ImageFile(File):

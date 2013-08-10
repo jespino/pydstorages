@@ -3,12 +3,12 @@ from __future__ import unicode_literals
 import os
 from io import BytesIO, StringIO, UnsupportedOperation
 
-#from django.utils.encoding import smart_text
+from pystorages.utils.encoding import smart_text
 from .utils import FileProxyMixin
 import six
-#from django.utils.encoding import force_bytes, python_2_unicode_compatible
+from pystorages.utils.encoding import force_bytes, python_2_unicode_compatible
 
-#@python_2_unicode_compatible
+@python_2_unicode_compatible
 class File(FileProxyMixin):
     DEFAULT_CHUNK_SIZE = 64 * 2**10
 
@@ -128,7 +128,7 @@ class File(FileProxyMixin):
     def close(self):
         self.file.close()
 
-#@python_2_unicode_compatible
+@python_2_unicode_compatible
 class ContentFile(File):
     """
     A File-like object that takes just raw content, rather than an actual file.
@@ -138,7 +138,7 @@ class ContentFile(File):
             stream_class = StringIO if isinstance(content, six.text_type) else BytesIO
         else:
             stream_class = BytesIO
-            #content = force_bytes(content)
+            content = force_bytes(content)
         super(ContentFile, self).__init__(stream_class(content), name=name)
         self.size = len(content)
 

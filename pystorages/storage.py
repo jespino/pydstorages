@@ -7,15 +7,16 @@ except ImportError:     # Python 2
 import itertools
 from datetime import datetime
 
-from django.conf import settings
-from django.core.exceptions import SuspiciousFileOperation
-from django.core.files import locks, File
-from django.core.files.move import file_move_safe
-from django.utils.encoding import force_text, filepath_to_uri
-from django.utils.functional import LazyObject
-from django.utils.module_loading import import_by_path
-from django.utils.text import get_valid_filename
-from django.utils._os import safe_join, abspathu
+from pystorages.conf import settings
+from pystorages.exceptions import SuspiciousFileOperation
+from pystorages import locks
+from pystorages.base import File
+from pystorages.move import file_move_safe
+from pystorages.utils.encoding import force_text, filepath_to_uri
+from pystorages.utils.functional import LazyObject
+from pystorages.utils.module_loading import import_by_path
+from pystorages.utils.text import get_valid_filename
+from pystorages.utils._os import safe_join, abspathu
 
 
 __all__ = ('Storage', 'FileSystemStorage', 'DefaultStorage', 'default_storage')

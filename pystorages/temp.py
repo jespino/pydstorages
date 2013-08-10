@@ -11,7 +11,7 @@ NamedTemporaryFile uses the O_TEMPORARY flag, and thus cannot be reopened [1].
 
 import os
 import tempfile
-from django.core.files.utils import FileProxyMixin
+from .utils import FileProxyMixin
 
 __all__ = ('NamedTemporaryFile', 'gettempdir',)
 
