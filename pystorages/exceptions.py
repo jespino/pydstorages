@@ -1,4 +1,4 @@
-class ImpropertlyConfigured(Exception):
+class ImproperlyConfigured(Exception):
     pass
 
 

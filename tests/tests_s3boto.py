@@ -2,12 +2,12 @@ import mock
 import datetime
 import urlparse
 
-from django.test import TestCase
-from django.core.files.base import ContentFile
+from unittest import TestCase
+from pystorages.base import ContentFile
 
 from boto.s3.key import Key
 
-from storages.backends import s3boto
+from pystorages.backends import s3boto
 
 __all__ = (
     'ParseTsExtendedCase',
@@ -144,7 +144,7 @@ class S3BotoStorageTests(S3BotoTestCase):
             _file, 1, headers=self.storage.headers,
         )
         file._multipart.complete_upload.assert_called_once()
-    
+
     def test_storage_exists(self):
         key = self.storage.bucket.new_key.return_value
         key.exists.return_value = True
@@ -152,7 +152,7 @@ class S3BotoStorageTests(S3BotoTestCase):
 
     def test_storage_exists_false(self):
         key = self.storage.bucket.new_key.return_value
-        key.exists.return_value = False 
+        key.exists.return_value = False
         self.assertFalse(self.storage.exists("file.txt"))
 
     def test_storage_delete(self):
@@ -231,7 +231,7 @@ class S3BotoStorageTests(S3BotoTestCase):
         parsed_url = urlparse.urlparse(url)
         self.assertEqual(parsed_url.path,
                          "/whacky%20%26%20filename.mp4")
-        
+
 #class S3BotoStorageFileTests(S3BotoTestCase):
 #    def test_multipart_upload(self):
 #        nparts = 2

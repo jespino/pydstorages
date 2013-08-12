@@ -8,7 +8,6 @@ import unittest
 from pystorages.base import File
 from pystorages.move import file_move_safe
 from pystorages.base import ContentFile
-from pystorages.uploadedfile import SimpleUploadedFile
 
 TEST_TEMP_DIR = os.path.join(os.path.dirname(__file__), 'temp')
 
@@ -31,7 +30,7 @@ class FileTests(unittest.TestCase):
     def test_file_mode(self):
         # Should not set mode to None if it is not present.
         # See #14681, stdlib gzip module crashes if mode is set to None
-        file = SimpleUploadedFile("mode_test.txt", b"content")
+        file = File("mode_test.txt", b"content")
         self.assertFalse(hasattr(file, 'mode'))
         g = gzip.GzipFile(fileobj=file)
 

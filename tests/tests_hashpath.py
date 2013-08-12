@@ -1,11 +1,11 @@
 import os
 import shutil
 
-from django.test import TestCase
-from django.core.files.base import ContentFile
-from django.conf import settings
+from unittest import TestCase
+from pystorages.base import ContentFile
+from pystorages.conf import settings
 
-from storages.backends.hashpath import HashPathStorage
+from pystorages.backends.hashpath import HashPathStorage
 
 TEST_PATH_PREFIX = 'django-storages-test'
 
