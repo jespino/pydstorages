@@ -7,16 +7,16 @@ except ImportError:     # Python 2
 import itertools
 from datetime import datetime
 
-from pystorages.conf import settings
-from pystorages.exceptions import SuspiciousFileOperation
-from pystorages import locks
-from pystorages.base import File
-from pystorages.move import file_move_safe
-from pystorages.utils.encoding import force_text, filepath_to_uri
-from pystorages.utils.functional import LazyObject
-from pystorages.utils.module_loading import import_by_path
-from pystorages.utils.text import get_valid_filename
-from pystorages.utils._os import safe_join, abspathu
+from pydstorages.conf import settings
+from pydstorages.exceptions import SuspiciousFileOperation
+from pydstorages import locks
+from pydstorages.base import File
+from pydstorages.move import file_move_safe
+from pydstorages.utils.encoding import force_text, filepath_to_uri
+from pydstorages.utils.functional import LazyObject
+from pydstorages.utils.module_loading import import_by_path
+from pydstorages.utils.text import get_valid_filename
+from pydstorages.utils._os import safe_join, abspathu
 
 
 __all__ = ('Storage', 'FileSystemStorage', 'DefaultStorage', 'default_storage')

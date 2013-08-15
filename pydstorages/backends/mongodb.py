@@ -1,8 +1,8 @@
-from pystorages.conf import settings
-from pystorages.base import File
-from pystorages.storage import Storage
+from pydstorages.conf import settings
+from pydstorages.base import File
+from pydstorages.storage import Storage
 from django.db import connections
-from pystorages.utils.encoding import force_unicode
+from pydstorages.utils.encoding import force_unicode
 
 try:
     from gridfs import GridFS, NoFile

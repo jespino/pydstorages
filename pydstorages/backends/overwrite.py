@@ -1,4 +1,4 @@
-from pystorages.storage import FileSystemStorage
+from pydstorages.storage import FileSystemStorage
 
 
 class OverwriteStorage(FileSystemStorage):

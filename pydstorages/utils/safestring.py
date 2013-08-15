@@ -4,7 +4,7 @@ without further escaping in HTML. Marking something as a "safe string" means
 that the producer of the string has already turned characters that should not
 be interpreted by the HTML engine (e.g. '<') into the appropriate entities.
 """
-from pystorages.utils.functional import curry, Promise, allow_lazy
+from pydstorages.utils.functional import curry, Promise, allow_lazy
 import six
 
 class EscapeData(object):

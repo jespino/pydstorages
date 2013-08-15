@@ -1,8 +1,8 @@
 import os.path
 
-from pystorages.base import ContentFile
-from pystorages.storage import Storage
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.base import ContentFile
+from pydstorages.storage import Storage
+from pydstorages.exceptions import ImproperlyConfigured
 
 try:
     import azure
@@ -12,7 +12,7 @@ except ImportError:
         "Could not load Azure bindings. "
         "See https://github.com/WindowsAzure/azure-sdk-for-python")
 
-from pystorages.conf import settings
+from pydstorages.conf import settings
 
 
 def clean_name(name):

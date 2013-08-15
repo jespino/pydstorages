@@ -1,8 +1,8 @@
 
 import os
 
-from pystorages.storage import FileSystemStorage
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.storage import FileSystemStorage
+from pydstorages.exceptions import ImproperlyConfigured
 
 try:
     from PIL import ImageFile as PILImageFile

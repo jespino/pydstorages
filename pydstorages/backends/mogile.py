@@ -2,12 +2,12 @@ import urlparse
 import mimetypes
 from StringIO import StringIO
 
-from pystorages.conf import settings
+from pydstorages.conf import settings
 from django.core.cache import cache
-from pystorages.utils.text import force_unicode
-from pystorages.storage import Storage
+from pydstorages.utils.text import force_unicode
+from pydstorages.storage import Storage
 from django.http import HttpResponse, HttpResponseNotFound
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.exceptions import ImproperlyConfigured
 
 try:
     import mogilefs

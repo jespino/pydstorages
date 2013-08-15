@@ -5,9 +5,9 @@ import gzip
 import tempfile
 import unittest
 
-from pystorages.base import File
-from pystorages.move import file_move_safe
-from pystorages.base import ContentFile
+from pydstorages.base import File
+from pydstorages.move import file_move_safe
+from pydstorages.base import ContentFile
 
 TEST_TEMP_DIR = os.path.join(os.path.dirname(__file__), 'temp')
 

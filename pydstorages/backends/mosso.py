@@ -10,10 +10,10 @@ warnings.warn("The mosso module will be deprecated in version 1.2 of "
               "django-cumulus at http://github.com/richleland/django-cumulus.",
               PendingDeprecationWarning)
 
-from pystorages.conf import settings
-from pystorages.exceptions import ImproperlyConfigured
-from pystorages.base import File
-from pystorages.storage import Storage
+from pydstorages.conf import settings
+from pydstorages.exceptions import ImproperlyConfigured
+from pydstorages.base import File
+from pydstorages.storage import Storage
 from django.utils.text import get_valid_filename
 
 try:

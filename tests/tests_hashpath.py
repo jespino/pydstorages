@@ -2,10 +2,10 @@ import os
 import shutil
 
 from unittest import TestCase
-from pystorages.base import ContentFile
-from pystorages.conf import settings
+from pydstorages.base import ContentFile
+from pydstorages.conf import settings
 
-from pystorages.backends.hashpath import HashPathStorage
+from pydstorages.backends.hashpath import HashPathStorage
 
 TEST_PATH_PREFIX = 'django-storages-test'
 

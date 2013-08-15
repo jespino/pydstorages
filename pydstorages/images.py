@@ -5,7 +5,7 @@ Requires Pillow (or PIL), as you might imagine.
 """
 import zlib
 
-from pystorages.base import File
+from pydstorages.base import File
 
 
 class ImageFile(File):

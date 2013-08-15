@@ -5,14 +5,14 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name = 'pystorages',
-    version = ":versiontools:pystorages:",
+    name = 'pydstorages',
+    version = ":versiontools:pydstorages:",
     description = "Python generic storage abstraction library",
     long_description = "",
     keywords = 'data, storage',
     author = 'Jesús Espino García',
     author_email = 'jespinog@gmail.com',
-    url = 'https://github.com/jespino/pystorages',
+    url = 'https://github.com/jespino/pydstorages',
     license = 'BSD',
     include_package_data = True,
     packages = find_packages(),

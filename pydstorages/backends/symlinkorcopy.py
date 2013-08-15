@@ -1,7 +1,7 @@
 import os
 
-from pystorages.conf import settings
-from pystorages.storage import FileSystemStorage
+from pydstorages.conf import settings
+from pydstorages.storage import FileSystemStorage
 
 __doc__ = """
 I needed to efficiently create a mirror of a directory tree (so that

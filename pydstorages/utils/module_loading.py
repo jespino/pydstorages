@@ -3,7 +3,7 @@ from importlib import import_module
 import os
 import sys
 
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.exceptions import ImproperlyConfigured
 import six
 
 

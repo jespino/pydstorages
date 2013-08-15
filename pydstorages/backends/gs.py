@@ -3,10 +3,10 @@ try:
 except ImportError:
     from StringIO import StringIO  # noqa
 
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.exceptions import ImproperlyConfigured
 
-from pystorages.backends.s3boto import S3BotoStorage, S3BotoStorageFile
-from pystorages.conf import settings
+from pydstorages.backends.s3boto import S3BotoStorage, S3BotoStorageFile
+from pydstorages.conf import settings
 
 try:
     from boto.gs.connection import GSConnection, SubdomainCallingFormat

@@ -8,10 +8,10 @@ try:
 except ImportError:
     from StringIO import StringIO  # noqa
 
-from pystorages.base import File
-from pystorages.storage import Storage
-from pystorages.exceptions import ImproperlyConfigured, SuspiciousOperation
-from pystorages.utils.encoding import force_unicode, smart_str, filepath_to_uri
+from pydstorages.base import File
+from pydstorages.storage import Storage
+from pydstorages.exceptions import ImproperlyConfigured, SuspiciousOperation
+from pydstorages.utils.encoding import force_unicode, smart_str, filepath_to_uri
 
 try:
     from boto import __version__ as boto_version
@@ -23,7 +23,7 @@ except ImportError:
     raise ImproperlyConfigured("Could not load Boto's S3 bindings.\n"
                                "See https://github.com/boto/boto")
 
-from pystorages.conf import settings
+from pydstorages.conf import settings
 
 boto_version_info = tuple([int(i) for i in boto_version.split('-')[0].split('.')])
 

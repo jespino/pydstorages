@@ -3,7 +3,7 @@ import stat
 import sys
 from os.path import join, normcase, normpath, abspath, isabs, sep, dirname
 
-from pystorages.utils.encoding import force_text
+from pydstorages.utils.encoding import force_text
 import six
 
 try:

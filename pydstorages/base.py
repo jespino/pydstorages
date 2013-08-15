@@ -3,10 +3,10 @@ from __future__ import unicode_literals
 import os
 from io import BytesIO, StringIO, UnsupportedOperation
 
-from pystorages.utils.encoding import smart_text
+from pydstorages.utils.encoding import smart_text
 from .utils import FileProxyMixin
 import six
-from pystorages.utils.encoding import force_bytes, python_2_unicode_compatible
+from pydstorages.utils.encoding import force_bytes, python_2_unicode_compatible
 
 @python_2_unicode_compatible
 class File(FileProxyMixin):

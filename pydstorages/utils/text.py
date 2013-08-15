@@ -5,16 +5,16 @@ import unicodedata
 from gzip import GzipFile
 from io import BytesIO
 
-from pystorages.utils.encoding import force_text
-from pystorages.utils.functional import allow_lazy, SimpleLazyObject
-from pystorages.utils.safestring import mark_safe
+from pydstorages.utils.encoding import force_text
+from pydstorages.utils.functional import allow_lazy, SimpleLazyObject
+from pydstorages.utils.safestring import mark_safe
 import six
 from six.moves import html_entities
 
 if not six.PY3:
     # Import force_unicode even though this module doesn't use it, because some
     # people rely on it being here.
-    from pystorages.utils.encoding import force_unicode
+    from pydstorages.utils.encoding import force_unicode
 
 # Capitalizes the first letter of a string.
 capfirst = lambda x: x and force_text(x)[0].upper() + force_text(x)[1:]

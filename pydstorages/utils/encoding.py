@@ -9,7 +9,7 @@ try:
 except ImportError:     # Python 2
     from urllib import quote
 
-from pystorages.utils.functional import Promise
+from pydstorages.utils.functional import Promise
 import six
 
 class DjangoUnicodeDecodeError(UnicodeDecodeError):

@@ -3,11 +3,11 @@ import datetime
 import urlparse
 
 from unittest import TestCase
-from pystorages.base import ContentFile
+from pydstorages.base import ContentFile
+from pydstorages.backends import s3boto
 
 from boto.s3.key import Key
 
-from pystorages.backends import s3boto
 
 __all__ = (
     'ParseTsExtendedCase',

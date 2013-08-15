@@ -23,10 +23,10 @@ try:
 except ImportError:
     from StringIO import StringIO
 
-from pystorages.conf import settings
-from pystorages.base import File
-from pystorages.storage import Storage
-from pystorages.exceptions import ImproperlyConfigured
+from pydstorages.conf import settings
+from pydstorages.base import File
+from pydstorages.storage import Storage
+from pydstorages.exceptions import ImproperlyConfigured
 
 
 class FTPStorageException(Exception):

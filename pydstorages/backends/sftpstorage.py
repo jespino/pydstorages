@@ -55,9 +55,9 @@ import stat
 import urlparse
 from datetime import datetime
 
-from pystorages.conf import settings
-from pystorages.base import File
-from pystorages.storage import Storage
+from pydstorages.conf import settings
+from pydstorages.base import File
+from pydstorages.storage import Storage
 
 try:
     from cStringIO import StringIO

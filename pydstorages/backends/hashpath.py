@@ -1,7 +1,7 @@
 import os, hashlib, errno
 
-from pystorages.storage import FileSystemStorage
-from pystorages.utils.encoding import force_unicode
+from pydstorages.storage import FileSystemStorage
+from pydstorages.utils.encoding import force_unicode
 
 class HashPathStorage(FileSystemStorage):
     """
